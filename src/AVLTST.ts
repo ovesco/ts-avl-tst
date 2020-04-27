@@ -162,7 +162,7 @@ class AVLTST<T> {
     return x.ends ? [x, ...base] : base;
   }
 
-  private retrieve(x: Node<T> | null, key: string, d: number, callback: (n: Node<T>) => any = (t) => null): T | null {
+  private retrieve(x: Node<T> | null, key: string, d: number, callback: (n: Node<T>) => any = () => null): T | null {
     if (x === null) return null;
 
     callback(x);
