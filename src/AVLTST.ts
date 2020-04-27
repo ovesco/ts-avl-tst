@@ -75,7 +75,7 @@ class AVLTST<T> {
 
   private put(x: Node<T> | null, key: string, value: T, d: number) {
 
-    const c = [...key][d];
+    const c = key.charAt(d);
     if (x === null) {
       x = new Node(c);
       this.cnt += 1;
@@ -130,7 +130,7 @@ class AVLTST<T> {
     if (x === null) return [];
 
     let list: T[] = [];
-    const c = [...key][d];
+    const c = key.charAt(d);
 
     if (c === this.restWildcard) {
       list = this.discover(x).map(n => n.value) as T[];
@@ -167,7 +167,7 @@ class AVLTST<T> {
 
     callback(x);
 
-    const c = [...key][d];
+    const c = key.charAt(d);
     if (c < x.c) return this.retrieve(x.left, key, d, callback);
     if (c > x.c) return this.retrieve(x.right, key, d, callback);
     if (d < key.length - 1) return this.retrieve(x.mid, key, d + 1, callback);

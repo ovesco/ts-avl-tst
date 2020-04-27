@@ -1,10 +1,10 @@
-# Typescript AVL Ternary search trie
+# Typescript AVL Ternary search tree
 
-This is an attempt at implementing an AVL ternary search trie in typescript. This has the advantage of offering a wildcard-based API in an efficient way.
+This is an attempt at implementing an AVL ternary search tree in typescript. This has the advantage of offering a wildcard-based API in an efficient way.
 Code is highly inspired from the ASD2 course given at HEIG-VD, Yverdon-Les-Bains, Switzerland.
 
 ```typescript
-const trie = new AVLTernarySearchTrie<number>();
+const trie = new AVLTernarySearchTree<number>();
 trie.set('aaa', 1);
 trie.set('aba', 2);
 trie.set('abc', 3);
