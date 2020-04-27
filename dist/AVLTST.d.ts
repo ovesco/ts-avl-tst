@@ -1,0 +1,30 @@
+import Node from './Node';
+declare class AVLTST<T> {
+    private singleWildcard;
+    private restWildcard;
+    private root;
+    private N;
+    private cnt;
+    constructor(singleWildcard?: string, restWildcard?: string);
+    get size(): number;
+    get count(): number;
+    has(key: string): boolean;
+    set(key: string, value: T): void;
+    get(key: string): T | null;
+    wildcardGet(key: string): T[];
+    remove(key: string): void;
+    print(x?: Node<T> | null, prefix?: string): string;
+    private put;
+    private delete;
+    private collect;
+    private discover;
+    private retrieve;
+    private updateNodeHeight;
+    private height;
+    private balance;
+    private restoreBalance;
+    private rotateRight;
+    private rotateLeft;
+    private validateKey;
+}
+export default AVLTST;
