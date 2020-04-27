@@ -19,6 +19,13 @@ trie.remove('aba');
 trie.wildcardGet('ab_'); // [3]
 ```
 
+## Installation
+This library is not published on NPM as I'm not sure to publish it one day, it's just a personal experiment. Even though if you want to use it (at your own risks), run
+```
+npm i -S ovesco/ts-avl-tst#master -or-commit-or-tag
+```
+which will directly pull it from github.
+
 ## Wildcards
 the `.wildcardGet(key: string)` method supports the following wildcards:
 - `_` which match any character
