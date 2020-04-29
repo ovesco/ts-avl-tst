@@ -4,6 +4,7 @@ This is an attempt at implementing an AVL ternary search tree in typescript. Thi
 Code is highly inspired from the ASD2 course given at HEIG-VD, Yverdon-Les-Bains, Switzerland.
 
 ```typescript
+import AVLTernarySearchTree from 'ts-avl-tst';
 const trie = new AVLTernarySearchTree<number>();
 trie.set('aaa', 1);
 trie.set('aba', 2);
