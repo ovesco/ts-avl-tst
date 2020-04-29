@@ -1,5 +1,5 @@
 {
-  "name": "avl-tst",
+  "name": "ts-avl-tst",
   "version": "0.1.0",
   "description": "An AVL Ternary search tree implementation in typescript",
   "keywords": ["avl", "ternary", "search", "tree", "trie", "wildcard"],
